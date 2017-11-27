@@ -296,6 +296,10 @@ ul.tips {
   float: left; /* LTR */
   padding: 15px 15px 15px 10px; /* LTR */
 }
+/*ANKV added this*/
+#logo img {
+  width: 70px;
+}
 #name-and-slogan {
   float: left; /* LTR */
   padding-top: 34px;
@@ -311,6 +315,7 @@ h1#site-name {
 }
 #site-name a {
   font-weight: normal;
+  color: black; /*ankv added this*/
 }
 #site-slogan {
   font-size: 0.929em;
@@ -517,6 +522,11 @@ h1#site-name {
 #secondary-menu-links a:hover,
 #secondary-menu-links a:focus {
   text-decoration: underline;
+}
+/*ankv added this*/
+#secondary-menu-links li a {
+  text-transform: capitalize;
+  color: black;
 }
 
 /* ------------------- Main ------------------- */
@@ -947,7 +957,10 @@ ul.links {
   background-color: #2c2c2c;
   background-color: rgba(0, 0, 0, 0.15);
 }
-
+/*ANKV added this*/
+#footer-wrapper .section {
+  background-color: black;
+}
 /* --------------- System Tabs  --------------- */
 
 .tabs {

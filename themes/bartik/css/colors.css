@@ -54,6 +54,6 @@ a:active {
 #name-and-slogan,
 #name-and-slogan a,
 #secondary-menu-links li a {
-  text-transform: capitalize;
-  color: black;
+  text-transform: capitalize !important; /*ankv added this.*/
+  color: black !important;/*ankv changed the color from white to black.*/
 }
