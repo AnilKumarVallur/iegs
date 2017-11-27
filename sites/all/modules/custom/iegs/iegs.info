@@ -1,0 +1,3 @@
+name = IEGS Custom
+description = All custom code related to this website is included in this.
+core = 7.x

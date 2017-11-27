@@ -1,0 +1,24 @@
+<?php
+
+function iegs_form_alter(&$form, &$form_state, $form_id) {
+	if($form_id == "registrations_node_form")
+	{
+		$form['title']['#size'] = 35;
+		$form['title']['#maxlength'] = 35;
+		$form['actions']['submit']['#value'] = 'Register';
+	}
+	//switch ($form_id) {
+      // This is our form ID.
+      //case 'registrations_node_form':
+        // Our kickin' mods go here.
+		//$form['edit-submit'] = array(
+  		//'#type' => 'submit',
+  		//'#value' => t('Register'),
+		//);
+		//$form['buttons']['op']['#value'] = t('Register');
+		//$i=$i+1;
+     //break;
+    //}
+}
+
+?>
