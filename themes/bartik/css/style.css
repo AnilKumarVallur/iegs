@@ -463,17 +463,24 @@ h1#site-name {
 
 #main-menu {
   clear: both;
+  border-bottom: 2px solid #ccc; /*ankv added this*/
 }
 #main-menu-links {
   font-size: 0.929em;
   margin: 0;
-  padding: 0 15px;
+  /*padding: 0 15px; ankv commented this*/
+  padding:0;
 }
 #main-menu-links li {
   float: left; /* LTR */
   list-style: none;
   padding: 0 1px;
   margin: 0 1px;
+  border-right: 1px solid #ccc; /*ankv added this*/
+}
+/*ankv added #main-menu .first CSS.*/
+#main-menu-links .first {
+  border-left: 1px solid #ccc;
 }
 #main-menu-links a {
   color: #333;
@@ -525,7 +532,7 @@ h1#site-name {
 }
 /*ankv added this*/
 #secondary-menu-links li a {
-  text-transform: capitalize;
+  text-transform: UPPERCASE;
   color: black;
 }
 

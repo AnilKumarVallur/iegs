@@ -87,7 +87,24 @@
 ?>
 <div id="page-wrapper"><div id="page">
   <div id="header" class="<?php print $secondary_menu ? 'with-secondary-menu': 'without-secondary-menu'; ?>"><div class="section clearfix">
-
+    <?php if ($main_menu): ?>
+      <div id="main-menu" class="navigation">
+        <?php print theme('links__system_main_menu', array(
+          'links' => $main_menu,
+          'attributes' => array(
+            'id' => 'main-menu-links',
+            'class' => array('links', 'clearfix'),
+          ),
+          'heading' => array(
+            'text' => t('Main menu'),
+            'level' => 'h2',
+            'class' => array('element-invisible'),
+          ),
+        )); ?>
+      </div> <!-- /#main-menu -->
+    <?php endif; ?>
+	
+	<div id="after-main">
     <?php if ($logo): ?>
       <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
         <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
@@ -122,23 +139,6 @@
 
     <?php print render($page['header']); ?>
 
-    <?php if ($main_menu): ?>
-      <div id="main-menu" class="navigation">
-        <?php print theme('links__system_main_menu', array(
-          'links' => $main_menu,
-          'attributes' => array(
-            'id' => 'main-menu-links',
-            'class' => array('links', 'clearfix'),
-          ),
-          'heading' => array(
-            'text' => t('Main menu'),
-            'level' => 'h2',
-            'class' => array('element-invisible'),
-          ),
-        )); ?>
-      </div> <!-- /#main-menu -->
-    <?php endif; ?>
-
     <?php if ($secondary_menu): ?>
       <div id="secondary-menu" class="navigation">
         <?php print theme('links__system_secondary_menu', array(
@@ -155,9 +155,9 @@
         )); ?>
       </div> <!-- /#secondary-menu -->
     <?php endif; ?>
-
+	</div>
   </div></div> <!-- /.section, /#header -->
-
+  
   <?php if ($messages): ?>
     <div id="messages"><div class="section clearfix">
       <?php print $messages; ?>
