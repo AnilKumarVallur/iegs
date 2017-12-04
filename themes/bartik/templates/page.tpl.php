@@ -86,6 +86,7 @@
  */
 ?>
 <div id="page-wrapper"><div id="page">
+  <div id="custom-hash-banner-block"></div>
   <div id="header" class="<?php print $secondary_menu ? 'with-secondary-menu': 'without-secondary-menu'; ?>"><div class="section clearfix">
     <?php if ($main_menu): ?>
       <div id="main-menu" class="navigation">
@@ -135,6 +136,7 @@
         <?php endif; ?>
 
       </div> <!-- /#name-and-slogan -->
+	  <div id="custom-iegs-secondary-title"><h2>IEGS</h2></div>
     <?php endif; ?>
 
     <?php print render($page['header']); ?>
@@ -156,6 +158,9 @@
       </div> <!-- /#secondary-menu -->
     <?php endif; ?>
 	</div>
+	<div id="custom-green-banner-block"></div> 
+	<div id="custom-hash-banner-block"></div> 
+	<div id="custom-blue-banner-block"></div> 
   </div></div> <!-- /.section, /#header -->
   
   <?php if ($messages): ?>

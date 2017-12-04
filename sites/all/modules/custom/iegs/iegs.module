@@ -6,19 +6,15 @@ function iegs_form_alter(&$form, &$form_state, $form_id) {
 		$form['title']['#size'] = 35;
 		$form['title']['#maxlength'] = 35;
 		$form['actions']['submit']['#value'] = 'Register';
+		drupal_set_title('Register');
 	}
-	//switch ($form_id) {
-      // This is our form ID.
-      //case 'registrations_node_form':
-        // Our kickin' mods go here.
-		//$form['edit-submit'] = array(
-  		//'#type' => 'submit',
-  		//'#value' => t('Register'),
-		//);
-		//$form['buttons']['op']['#value'] = t('Register');
-		//$i=$i+1;
-     //break;
-    //}
+	if($form_id == "user-login")
+	{
+		drupal_set_title('Login');
+	}
+	if(arg(0) == 'user' && arg(1) == 'login') {
+    		drupal_set_title(t('Log in'));
+  	}
 }
 
 ?>

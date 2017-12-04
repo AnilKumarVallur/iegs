@@ -1,6 +1,5 @@
 
 /* ---------- Overall Specifications ---------- */
-
 body {
   line-height: 1.5;
   font-size: 87.5%;
@@ -315,7 +314,10 @@ h1#site-name {
 }
 #site-name a {
   font-weight: normal;
-  color: black; /*ankv added this*/
+  color: #6C3483; /*ankv added this*/
+  font-family: 'Anton', sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
 }
 #site-slogan {
   font-size: 0.929em;
@@ -463,7 +465,7 @@ h1#site-name {
 
 #main-menu {
   clear: both;
-  border-bottom: 2px solid #ccc; /*ankv added this*/
+  border-bottom: 1px solid #E76835; /*ankv added this*/
 }
 #main-menu-links {
   font-size: 0.929em;
@@ -476,7 +478,7 @@ h1#site-name {
   list-style: none;
   padding: 0 1px;
   margin: 0 1px;
-  border-right: 1px solid #ccc; /*ankv added this*/
+  border-right: 1px solid #0E61A5; /*ankv added this*/
 }
 /*ankv added #main-menu .first CSS.*/
 #main-menu-links .first {
@@ -484,22 +486,22 @@ h1#site-name {
 }
 #main-menu-links a {
   color: #333;
-  background: #ccc;
-  background: rgba(255, 255, 255, 0.7);
+  background: #F0F8FF;
+  /*background: rgba(255, 255, 255, 0.7);*/
   float: left; /* LTR */
   height: 2.4em;
   line-height: 2.4em;
   padding: 0 0.8em;
   text-decoration: none;
   text-shadow: 0 1px #eee;
-  -khtml-border-radius-topleft: 8px;
+  /*-khtml-border-radius-topleft: 8px;
   -khtml-border-radius-topright: 8px;
   -moz-border-radius-topleft: 8px;
   -moz-border-radius-topright: 8px;
   -webkit-border-top-left-radius: 8px;
   -webkit-border-top-right-radius: 8px;
   border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  border-top-right-radius: 8px;*/
 }
 #main-menu-links a:hover,
 #main-menu-links a:focus {
@@ -887,13 +889,22 @@ ul.links {
 #footer .block h2 {
   margin: 0;
 }
-#footer-columns h2 {
+/*#footer-columns h2 {
   border-bottom: 1px solid #555;
   border-color: rgba(255, 255, 255, 0.15);
   font-size: 1em;
   margin-bottom: 0;
   padding-bottom: 3px;
   text-transform: uppercase;
+} ankv commented this and added below*/
+#footer-columns h2 {
+  text-decoration: underline;
+  font-size: 0.9em;
+  margin-bottom: 0;
+  /*padding-bottom: 2px;*/
+  text-transform: uppercase;
+  color: black;
+  font-weight:bold;
 }
 #footer-columns .content {
   margin-top: 0;
@@ -966,7 +977,7 @@ ul.links {
 }
 /*ANKV added this*/
 #footer-wrapper .section {
-  background-color: black;
+  background-color: #8533ff;
 }
 /* --------------- System Tabs  --------------- */
 
@@ -1119,10 +1130,10 @@ a.button {
   margin-bottom: 1em;
   margin-right: 0.6em; /* LTR */
   padding: 4px 17px;
-  -khtml-border-radius: 15px;
+  /*-khtml-border-radius: 15px; ankv commented this
   -moz-border-radius: 20px;
   -webkit-border-radius: 15px;
-  border-radius: 15px;
+  border-radius: 15px;*/
 }
 a.button:link,
 a.button:visited,
@@ -1666,4 +1677,116 @@ div.admin-panel .description {
 /*This is to remove the label for Captcha */
 .form-item-captcha-response .in-field-labels-processed {
   display:none;
+}
+#after-main {
+  min-height:100px;
+  border-bottom: 1px solid #E76835;
+}
+.captcha {
+  width:71%;
+}
+#user-login{
+  border:2px solid #2471A3;
+  padding:15px;  
+  width:99.4%;
+  background-color:#F0F8FF;
+}
+#user-login > div {
+  width:55%;
+  margin-left:30%;
+}
+.region-footer-firstcolumn #block-block-1 {
+  width: 50%;
+  margin: auto;
+}
+.region-footer-thirdcolumn #block-block-3 {
+  width: 50%;
+  margin: auto;
+}
+.region-footer-fourthcolumn #block-block-2 {
+  width: 50%;
+  margin: auto;
+}
+#custom-hash-banner-block{
+  height: 10px;
+  background-color: #BDC3C7;
+  border:1px solid black;
+}
+#custom-green-banner-block{
+  height: 10px;
+  background-color: #27AE60;
+}
+#custom-blue-banner-block{
+  height: 10px;
+  background-color: #2471A3;
+}
+#custom-iegs-secondary-title {
+  float: right;
+  /*font-size: 1.821em;
+  color: #686868;*/
+  line-height: 1;
+  margin-right: 2%;
+  font-family: 'Anton', sans-serif;
+  font-size: 40px;
+  font-weight:normal;
+  margin-top:-15px;
+}
+#user-login label{
+  float: left;
+  padding-right:15px;
+}
+#user-login .description {
+  display:none;
+}
+#user-login input {
+  width:50%	
+}
+#user-login input[type="password"] {
+  width:50%;
+  margin-left:4px;
+}
+#user-login input[type="submit"] {
+  width:25%;
+}
+#user-login #edit-captcha-response {
+  width:20%;	
+}
+.page-user #page-title {
+  margin-bottom: -20px !important;
+  width: 102%;
+  background-color: #E76835;
+  padding: 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.node-type-article #main {
+  display:none;
+}
+.page-registrations #main-wrapper{
+  width:100%;
+}
+.view-registrations .feed-icon {
+  display:none;
+}
+#print-registrations-link {
+  border: 2px solid #757575;
+  padding: 5px;
+  /*margin-right: 5px;*/
+  background: aliceblue;
+}
+#export-registrations-link {
+  border: 2px solid #757575;
+  padding: 5px;
+  /*margin-right: 5px;*/
+  background: aliceblue;
+}
+#graph-registrations-link {
+  border: 2px solid #757575;
+  padding: 5px;
+  /*margin-right: 5px;*/
+  background: aliceblue;
+}
+#block-block-6 {
+  float: right;
+  margin-bottom: 15px;	
 }

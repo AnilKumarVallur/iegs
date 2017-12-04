@@ -39,6 +39,7 @@ body,
   right: 0; /* LTR */
   /*top: 0; ankv commented this*/
   width: 480px;
+  top: -5px;
 }
 #content,
 #sidebar-first,

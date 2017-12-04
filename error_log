@@ -1,0 +1,8 @@
+[27-Nov-2017 17:05:03 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '$main_menu' (T_VARIABLE) in /home/anilkumar2016/public_html/demo.iegs.net.in/themes/bartik/templates/page.tpl.php on line 90
+[29-Nov-2017 11:47:01 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '}' in /home/anilkumar2016/public_html/demo.iegs.net.in/sites/all/modules/custom/iegs/iegs.module on line 12
+[29-Nov-2017 11:47:52 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '}' in /home/anilkumar2016/public_html/demo.iegs.net.in/sites/all/modules/custom/iegs/iegs.module on line 11
+[29-Nov-2017 11:47:53 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '}' in /home/anilkumar2016/public_html/demo.iegs.net.in/sites/all/modules/custom/iegs/iegs.module on line 11
+[02-Dec-2017 18:49:08 Asia/Kolkata] PHP Fatal error:  Call to a member function options_validate() on null in /home/anilkumar2016/public_html/demo.iegs.net.in/sites/all/modules/contrib/views/includes/admin.inc on line 4395
+[03-Dec-2017 17:07:13 Asia/Kolkata] PHP Fatal error:  [] operator not supported for strings in /home/anilkumar2016/public_html/demo.iegs.net.in/sites/all/modules/contrib/views/includes/admin.inc on line 2399
+[03-Dec-2017 23:35:45 Asia/Kolkata] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/anilkumar2016/public_html/demo.iegs.net.in/modules/php/php.module(80) : eval()'d code on line 11
+[04-Dec-2017 16:07:58 Asia/Kolkata] PHP Fatal error:  [] operator not supported for strings in /home/anilkumar2016/public_html/demo.iegs.net.in/sites/all/modules/contrib/views/includes/admin.inc on line 2399
